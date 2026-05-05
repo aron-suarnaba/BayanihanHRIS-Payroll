@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|c:\\vscode\\source\\repos\\bayanihanhris\u0026payroll\\bayanihanhris\u0026payroll\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|solutionrelative:bayanihanhris\u0026payroll\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|c:\\vscode\\source\\repos\\bayanihanhris\u0026payroll\\bayanihanhris\u0026payroll\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|solutionrelative:bayanihanhris\u0026payroll\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|c:\\vscode\\source\\repos\\bayanihanhris\u0026payroll\\bayanihanhris\u0026payroll\\models\\leavetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|solutionrelative:bayanihanhris\u0026payroll\\models\\leavetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|c:\\vscode\\source\\repos\\bayanihanhris\u0026payroll\\bayanihanhris\u0026payroll\\models\\holiday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|solutionrelative:bayanihanhris\u0026payroll\\models\\holiday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|c:\\vscode\\source\\repos\\bayanihanhris\u0026payroll\\bayanihanhris\u0026payroll\\models\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|solutionrelative:bayanihanhris\u0026payroll\\models\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|c:\\vscode\\source\\repos\\bayanihanhris\u0026payroll\\bayanihanhris\u0026payroll\\models\\taxbracket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|solutionrelative:bayanihanhris\u0026payroll\\models\\taxbracket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|c:\\vscode\\source\\repos\\bayanihanhris\u0026payroll\\bayanihanhris\u0026payroll\\models\\contributiontable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|solutionrelative:bayanihanhris\u0026payroll\\models\\contributiontable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|c:\\vscode\\source\\repos\\bayanihanhris\u0026payroll\\bayanihanhris\u0026payroll\\models\\payslip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|solutionrelative:bayanihanhris\u0026payroll\\models\\payslip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "BayanihanHRIS\u0026Payroll\\Models\\Department.cs",
+              "ToolTip": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Models\\Department.cs",
+              "RelativeToolTip": "BayanihanHRIS\u0026Payroll\\Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T09:52:48.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LeaveType.cs",
+              "DocumentMoniker": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Models\\LeaveType.cs",
+              "RelativeDocumentMoniker": "BayanihanHRIS\u0026Payroll\\Models\\LeaveType.cs",
+              "ToolTip": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Models\\LeaveType.cs",
+              "RelativeToolTip": "BayanihanHRIS\u0026Payroll\\Models\\LeaveType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:33:40.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "BayanihanHRIS\u0026Payroll\\Models\\Employee.cs",
+              "ToolTip": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Models\\Employee.cs",
+              "RelativeToolTip": "BayanihanHRIS\u0026Payroll\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:32:26.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Holiday.cs",
+              "DocumentMoniker": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Models\\Holiday.cs",
+              "RelativeDocumentMoniker": "BayanihanHRIS\u0026Payroll\\Models\\Holiday.cs",
+              "ToolTip": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Models\\Holiday.cs",
+              "RelativeToolTip": "BayanihanHRIS\u0026Payroll\\Models\\Holiday.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:32:04.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LeaveRequest.cs",
+              "DocumentMoniker": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Models\\LeaveRequest.cs",
+              "RelativeDocumentMoniker": "BayanihanHRIS\u0026Payroll\\Models\\LeaveRequest.cs",
+              "ToolTip": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Models\\LeaveRequest.cs",
+              "RelativeToolTip": "BayanihanHRIS\u0026Payroll\\Models\\LeaveRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:29:59.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TaxBracket.cs",
+              "DocumentMoniker": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Models\\TaxBracket.cs",
+              "RelativeDocumentMoniker": "BayanihanHRIS\u0026Payroll\\Models\\TaxBracket.cs",
+              "ToolTip": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Models\\TaxBracket.cs",
+              "RelativeToolTip": "BayanihanHRIS\u0026Payroll\\Models\\TaxBracket.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:27:55.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ContributionTable.cs",
+              "DocumentMoniker": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Models\\ContributionTable.cs",
+              "RelativeDocumentMoniker": "BayanihanHRIS\u0026Payroll\\Models\\ContributionTable.cs",
+              "ToolTip": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Models\\ContributionTable.cs",
+              "RelativeToolTip": "BayanihanHRIS\u0026Payroll\\Models\\ContributionTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:23:55.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Payslip.cs",
+              "DocumentMoniker": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Models\\Payslip.cs",
+              "RelativeDocumentMoniker": "BayanihanHRIS\u0026Payroll\\Models\\Payslip.cs",
+              "ToolTip": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Models\\Payslip.cs",
+              "RelativeToolTip": "BayanihanHRIS\u0026Payroll\\Models\\Payslip.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:07:07.882Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

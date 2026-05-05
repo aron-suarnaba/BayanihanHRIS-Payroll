@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "D3C8TsegNB4=",
+  "success": true,
+  "projectFilePath": "C:\\VSCode\\Source\\repos\\BayanihanHRIS&Payroll\\BayanihanHRIS&Payroll\\BayanihanHRIS&Payroll.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\administrator\\.nuget\\packages\\mathnet.numerics\\5.0.0\\mathnet.numerics.5.0.0.nupkg.sha512",
+    "C:\\Users\\administrator\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.7\\microsoft.entityframeworkcore.10.0.7.nupkg.sha512",
+    "C:\\Users\\administrator\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.7\\microsoft.entityframeworkcore.abstractions.10.0.7.nupkg.sha512",
+    "C:\\Users\\administrator\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.7\\microsoft.entityframeworkcore.analyzers.10.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}
