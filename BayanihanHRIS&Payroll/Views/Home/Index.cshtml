@@ -1,8 +1,84 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Dashboard";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container-fluid py-4">
+    <!-- Welcome Header -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1 class="display-5 fw-bold text-primary">Mabuhay!</h1>
+            <p class="fs-5 text-muted">BayanihanHRIS & Payroll Management System</p>
+        </div>
+    </div>
+
+    <!-- Quick Stats Cards -->
+    <div class="row g-3 mb-5">
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100 bg-primary text-white">
+                <div class="card-body">
+                    <h6 class="text-uppercase opacity-75">Total Employees</h6>
+                    <h2 class="display-6 fw-bold">128</h2>
+                    <a asp-controller="Employee" asp-action="Index" class="text-white text-decoration-none stretched-link small">
+                        View Directory <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body">
+                    <h6 class="text-uppercase text-muted">Upcoming Payroll</h6>
+                    <h2 class="display-6 fw-bold">May 15</h2>
+                    <a asp-controller="Payroll" asp-action="Process" class="link-primary text-decoration-none stretched-link small">
+                        View Schedule <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body">
+                    <h6 class="text-uppercase text-muted">Pending Attendance</h6>
+                    <h2 class="display-6 fw-bold text-warning">12</h2>
+                    <a asp-controller="Attendance" asp-action="Logs" class="link-primary text-decoration-none stretched-link small">
+                        Review Logs <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions Section -->
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-sm p-4">
+                <h4 class="mb-3">Quick Actions</h4>
+                <div class="d-flex flex-wrap gap-2">
+                    <a asp-controller="Employee" asp-action="Create" class="btn btn-outline-primary px-4">
+                        Add New Employee
+                    </a>
+                    <a asp-controller="Payroll" asp-action="Index" class="btn btn-outline-success px-4">
+                        Generate Payslips
+                    </a>
+                    <a asp-controller="Reports" asp-action="Index" class="btn btn-outline-secondary px-4">
+                        Summary Reports
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="card border-0 shadow-sm p-4 h-100">
+                <h4 class="mb-3">System Updates</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-2 pb-2 border-bottom small text-muted">
+                        <strong>May 08:</strong> SSS Contribution Table Updated
+                    </li>
+                    <li class="mb-2 pb-2 border-bottom small text-muted">
+                        <strong>May 05:</strong> New PhilHealth circular applied
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>

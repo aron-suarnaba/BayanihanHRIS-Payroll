@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BayanihanHRIS_Payroll.Models
 {
@@ -9,12 +10,11 @@ namespace BayanihanHRIS_Payroll.Models
 
         public int EmployeeId { get; set; }
 
-        [DataType(DataType.DateTime)]
+        [ForeignKey("EmployeeId")]
+        public virtual Employee? Employee { get; set; }
+
         public DateTime ClockIn { get; set; }
+        public DateTime? ClockOut { get; set; } 
 
-        [DataType(DataType.DateTime)]
-        public DateTime ClockOut { get; set; }
-
-        public string? DeviceThumbprint { get; set; }
     }
 }
