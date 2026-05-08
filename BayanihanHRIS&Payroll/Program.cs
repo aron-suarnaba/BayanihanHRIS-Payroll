@@ -1,3 +1,8 @@
+using BayanihanHRIS_Payroll.Data;
+using Microsoft.EntityFrameworkCore.SqlServer;
+
+using Microsoft.EntityFrameworkCore;
+
 namespace BayanihanHRIS_Payroll
 {
     public class Program
@@ -6,8 +11,20 @@ namespace BayanihanHRIS_Payroll
         {
             var builder = WebApplication.CreateBuilder(args);
 
+
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+                                   ?? builder.Configuration["ConnectionStrings:DefaultConnection"]
+                                   ?? builder.Configuration["DefaultConnection"]
+                                   ?? Environment.GetEnvironmentVariable("DefaultConnection");
+
+            if (string.IsNullOrEmpty(connectionString))
+            {
+                throw new InvalidOperationException("Connection string 'DefaultConnection' was not found. Add it to appsettings.json or environment variables.");
+            }
+
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
 
             var app = builder.Build();
 

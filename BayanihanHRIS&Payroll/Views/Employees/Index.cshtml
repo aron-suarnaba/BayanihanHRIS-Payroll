@@ -1,0 +1,64 @@
+﻿@model IEnumerable<BayanihanHRIS_Payroll.Models.Employee>
+
+@{
+    ViewData["Title"] = "Employee Directory";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="display-6 fw-bold text-primary">Employee Directory</h1>
+    <a class="btn btn-primary" asp-action="Create">
+        <i class="bi bi-person-plus-fill"></i> Add New Employee
+    </a>
+</div>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th class="ps-4">@Html.DisplayNameFor(model => model.EmployeeNumber)</th>
+                        <th>Full Name</th> <!-- Combined for cleaner UI -->
+                        <th>@Html.DisplayNameFor(model => model.BirthDate)</th>
+                        <th>@Html.DisplayNameFor(model => model.Department)</th>
+                        <th class="text-end pe-4">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="ps-4 fw-bold text-secondary">
+                                #@item.EmployeeNumber
+                            </td>
+                            <td>
+                                @item.FirstName @item.LastName
+                            </td>
+                            <td>
+                                @item.BirthDate.ToString("MMM dd, yyyy")
+                            </td>
+                            <td>
+                                <span class="badge bg-info text-dark">
+                                    @(item.Department?.Name ?? "Unassigned")
+                                </span>
+                            </td>
+                            <td class="text-end pe-4">
+                                <div class="btn-group btn-group-sm" role="group">
+                                    <a class="btn btn-outline-warning" asp-action="Edit" asp-route-id="@item.Id" title="Edit">
+                                        Edit
+                                    </a>
+                                    <a class="btn btn-outline-primary" asp-action="Details" asp-route-id="@item.Id" title="Details">
+                                        Details
+                                    </a>
+                                    <a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@item.Id" title="Delete">
+                                        Delete
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
