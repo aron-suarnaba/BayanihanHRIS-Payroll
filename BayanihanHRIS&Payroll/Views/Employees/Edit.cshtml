@@ -1,54 +1,131 @@
 ﻿@model BayanihanHRIS_Payroll.Models.Employee
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit Employee";
 }
 
-<h1>Edit</h1>
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-warning text-dark py-3">
+                    <h4 class="mb-0">
+                        <i class="bi bi-pencil-square"></i> Edit Employee:
+                        <span class="fw-light">@Model.FirstName @Model.LastName</span>
+                    </h4>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+                        
+                        <input type="hidden" asp-for="Id" />
 
-<h4>Employee</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="EmployeeNumber" class="control-label"></label>
-                <input asp-for="EmployeeNumber" class="form-control" />
-                <span asp-validation-for="EmployeeNumber" class="text-danger"></span>
+                        <!-- Name Row -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-4">
+                                <label asp-for="FirstName" class="form-label fw-bold"></label>
+                                <input asp-for="FirstName" class="form-control" />
+                                <span asp-validation-for="FirstName" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="MiddleName" class="form-label fw-bold"></label>
+                                <input asp-for="MiddleName" class="form-control" />
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="LastName" class="form-label fw-bold"></label>
+                                <input asp-for="LastName" class="form-control" />
+                                <span asp-validation-for="LastName" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <!-- Identity & Status Row -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-3">
+                                <label asp-for="EmployeeNumber" class="form-label fw-bold"></label>
+                                <input asp-for="EmployeeNumber" class="form-control bg-light" readonly />
+                            </div>
+                            <div class="col-md-3">
+                                <label asp-for="BirthDate" class="form-label fw-bold"></label>
+                                <input asp-for="BirthDate" class="form-control" type="date" />
+                            </div>
+                            <div class="col-md-3">
+                                <label asp-for="DateHired" class="form-label fw-bold"></label>
+                                <input asp-for="DateHired" class="form-control" type="date" />
+                            </div>
+                            <div class="col-md-3">
+                                <label asp-for="Status" class="form-label fw-bold"></label>
+                                <select asp-for="Status" class="form-select" asp-items="Html.GetEnumSelectList<EmploymentStatus>()"></select>
+                            </div>
+                        </div>
+
+                        <!-- Department & Payroll Row -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6">
+                                <label asp-for="DepartmentId" class="form-label fw-bold">Department</label>
+                                <select asp-for="DepartmentId" class="form-select" asp-items="ViewBag.DepartmentId">
+                                    <option value="">-- Select Department --</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="MonthlyRate" class="form-label fw-bold"></label>
+                                <div class="input-group">
+                                    <span class="input-group-text">₱</span>
+                                    <input asp-for="MonthlyRate" class="form-control" type="number" step="0.01" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5 class="text-secondary border-bottom pb-2 mb-3">Government Identifiers</h5>
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-4">
+                                <label asp-for="SSSNumber" class="form-label fw-bold">SSS #</label>
+                                <input asp-for="SSSNumber" class="form-control" />
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="TINNumber" class="form-label fw-bold">TIN #</label>
+                                <input asp-for="TINNumber" class="form-control" />
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="PhilHealthNumber" class="form-label fw-bold">PhilHealth #</label>
+                                <input asp-for="PhilHealthNumber" class="form-control" />
+                            </div>
+                        </div>
+
+                        <h5 class="text-secondary border-bottom pb-2 mb-3">Bank Details</h5>
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-4">
+                                <label asp-for="BankBranch" class="form-label fw-bold">Bank/Branch</label>
+                                <input asp-for="BankBranch" class="form-control" />
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="BankAccountNumber" class="form-label fw-bold">Account #</label>
+                                <input asp-for="BankAccountNumber" class="form-control" />
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="BankAccountName" class="form-label fw-bold">Account Name</label>
+                                <input asp-for="BankAccountName" class="form-control" />
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a asp-action="Index" class="btn btn-link text-decoration-none text-secondary p-0">
+                                <i class="bi bi-arrow-left"></i> Cancel
+                            </a>
+                            <button type="submit" class="btn btn-warning px-5 shadow-sm fw-bold">
+                                <i class="bi bi-save"></i> Update Employee
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="FirstName" class="control-label"></label>
-                <input asp-for="FirstName" class="form-control" />
-                <span asp-validation-for="FirstName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="LastName" class="control-label"></label>
-                <input asp-for="LastName" class="form-control" />
-                <span asp-validation-for="LastName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="BirthDate" class="control-label"></label>
-                <input asp-for="BirthDate" class="form-control" />
-                <span asp-validation-for="BirthDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DepartmentId" class="control-label"></label>
-                <select asp-for="DepartmentId" class="form-control" asp-items="ViewBag.DepartmentId"></select>
-                <span asp-validation-for="DepartmentId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

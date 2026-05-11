@@ -57,7 +57,7 @@ namespace BayanihanHRIS_Payroll.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,EmployeeNumber,FirstName,LastName,BirthDate,DepartmentId")] Employee employee)
+        public async Task<IActionResult> Create([Bind("Id,EmployeeNumber,FirstName,LastName,MiddleName,BirthDate,DateHired,Status,SSSNumber,PhilHealthNumber,TINNumber,PagIbigNumber,MonthlyRate,BankBranch,BankAccountName,BankAccountNumber,DepartmentId")] Employee employee)
         {
             if (ModelState.IsValid)
             {

@@ -1,48 +1,154 @@
 ﻿@model BayanihanHRIS_Payroll.Models.Employee
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Employee Profile";
 }
 
-<h1>Details</h1>
+<div class="container py-4">
+    <!-- Profile Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="display-6 fw-bold text-primary mb-0">@Model.FirstName @Model.MiddleName @Model.LastName</h1>
+            <p class="text-muted">Employee ID: <span class="fw-bold text-dark">#@Model.EmployeeNumber</span></p>
+        </div>
+        <div class="btn-group shadow-sm">
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+                <i class="bi bi-pencil-square"></i> Edit Profile
+            </a>
+            <a asp-action="Index" class="btn btn-outline-secondary border-start-0">
+                <i class="bi bi-arrow-left"></i> Back to List
+            </a>
+        </div>
+    </div>
 
-<div>
-    <h4>Employee</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.EmployeeNumber)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.EmployeeNumber)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FirstName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FirstName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.LastName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.LastName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.BirthDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.BirthDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Department)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Department.Name)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <div class="row">
+        <!-- Sidebar: Summary Info -->
+        <div class="col-lg-4 mb-4">
+            <div class="card shadow-sm border-0 text-center p-4">
+                <div class="mx-auto bg-light rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 100px; height: 100px;">
+                    <i class="bi bi-person-badge text-primary" style="font-size: 3rem;"></i>
+                </div>
+                <h5 class="mb-1">@Model.FirstName @Model.LastName</h5>
+                <span class="badge @(Model.Status == EmploymentStatus.Regular ? "bg-success" : "bg-warning") text-white mb-3">
+                    @Model.Status
+                </span>
+                <hr />
+                <div class="row text-start g-2">
+                    <div class="col-6">
+                        <small class="text-muted d-block">Department</small>
+                        <p class="fw-bold mb-0">@(Model.Department?.Name ?? "General")</p>
+                    </div>
+                    <div class="col-6">
+                        <small class="text-muted d-block">Monthly Rate</small>
+                        <p class="fw-bold text-success mb-0">₱@Model.MonthlyRate.ToString("N2")</p>
+                    </div>
+                    <div class="col-12 mt-3 text-center">
+                        <small class="text-muted d-block">Date Hired</small>
+                        <p class="fw-bold mb-0">@Model.DateHired.ToString("MMMM dd, yyyy")</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content: Detailed Info -->
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-body p-0">
+                    <!-- Nav Tabs -->
+                    <ul class="nav nav-tabs nav-fill bg-light border-bottom-0" id="employeeTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active py-3 border-0 rounded-0" id="basic-tab" data-bs-toggle="tab" data-bs-target="#basic" type="button">Basic Info</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link py-3 border-0 rounded-0" id="gov-tab" data-bs-toggle="tab" data-bs-target="#gov" type="button">Government IDs</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link py-3 border-0 rounded-0" id="bank-tab" data-bs-toggle="tab" data-bs-target="#bank" type="button">Banking</button>
+                        </li>
+                    </ul>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content p-4" id="employeeTabContent">
+                        <!-- Basic Info -->
+                        <div class="tab-pane fade show active" id="basic" role="tabpanel">
+                            <div class="row g-3">
+                                <div class="col-sm-4">
+                                    <label class="text-muted small">First Name</label>
+                                    <p class="fs-6 fw-medium">@Model.FirstName</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="text-muted small">Middle Name</label>
+                                    <p class="fs-6 fw-medium">@(Model.MiddleName ?? "---")</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="text-muted small">Last Name</label>
+                                    <p class="fs-6 fw-medium">@Model.LastName</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="text-muted small">Date of Birth</label>
+                                    <p class="fs-6 fw-medium">@Model.BirthDate.ToString("MMMM dd, yyyy")</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="text-muted small">Employment Status</label>
+                                    <p class="fs-6 fw-medium">@Model.Status</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gov IDs -->
+                        <div class="tab-pane fade" id="gov" role="tabpanel">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="p-3 bg-light rounded">
+                                        <label class="text-muted small">SSS Number</label>
+                                        <p class="fs-6 fw-bold text-dark mb-0">@(Model.SSSNumber ?? "Not Provided")</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="p-3 bg-light rounded">
+                                        <label class="text-muted small">PhilHealth</label>
+                                        <p class="fs-6 fw-bold text-dark mb-0">@(Model.PhilHealthNumber ?? "Not Provided")</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="p-3 bg-light rounded">
+                                        <label class="text-muted small">TIN</label>
+                                        <p class="fs-6 fw-bold text-dark mb-0">@(Model.TINNumber ?? "Not Provided")</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="p-3 bg-light rounded">
+                                        <label class="text-muted small">Pag-IBIG</label>
+                                        <p class="fs-6 fw-bold text-dark mb-0">@(Model.PagIbigNumber ?? "Not Provided")</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Banking -->
+                        <div class="tab-pane fade" id="bank" role="tabpanel">
+                            <div class="card border border-light shadow-none">
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col-12 border-bottom pb-2">
+                                            <label class="text-muted small d-block">Account Name</label>
+                                            <p class="fs-5 fw-bold text-primary mb-0">@(Model.BankAccountName ?? "---")</p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label class="text-muted small">Bank/Branch</label>
+                                            <p class="fs-6 fw-medium">@(Model.BankBranch ?? "---")</p>
+                                        </div>
+                                        <div class="col-sm-6 text-sm-end">
+                                            <label class="text-muted small">Account Number</label>
+                                            <p class="fs-5 font-monospace fw-bold">@(Model.BankAccountNumber ?? "---")</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- End Tab Content -->
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

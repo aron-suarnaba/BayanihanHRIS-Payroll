@@ -5,10 +5,42 @@
 }
 
 <div class="d-flex justify-content-between align-items-center mb-4">
-    <h1 class="display-6 fw-bold text-primary">Employee Directory</h1>
-    <a class="btn btn-primary" asp-action="Create">
+    <div>
+        <h1 class="display-6 fw-bold text-primary mb-0">Employee Directory</h1>
+        <p class="text-muted small">Manage and view all registered staff members.</p>
+    </div>
+    <button type="button" class="btn btn-primary shadow-sm" data-bs-toggle="modal" data-bs-target="#addEmployeeModal">
         <i class="bi bi-person-plus-fill"></i> Add New Employee
-    </a>
+    </button>
+</div>
+
+<div class="card shadow-sm border-0 mb-4 bg-light">
+    <div class="card-body">
+        <form asp-action="Index" method="get" class="row g-3">
+            <div class="col-md-5">
+                <div class="input-group">
+                    <span class="input-group-text bg-white border-end-0 text-muted">
+                        <i class="bi bi-search"></i>
+                    </span>
+                    <input type="text" name="searchString" value="@ViewData["CurrentFilter"]"
+                           class="form-control border-start-0" placeholder="Search by name or Employee #..." />
+                </div>
+            </div>
+            <div class="col-md-3">
+                <select name="deptFilter" class="form-select" asp-items="ViewBag.DepartmentId">
+                    <option value="">All Departments</option>
+                </select>
+            </div>
+            <div class="col-md-4 d-flex gap-2">
+                <button type="submit" class="btn btn-primary px-4">
+                    <i class="bi bi-filter"></i> Filter
+                </button>
+                <a asp-action="Index" class="btn btn-outline-secondary">
+                    Clear
+                </a>
+            </div>
+        </form>
+    </div>
 </div>
 
 <div class="card shadow-sm border-0">
@@ -17,14 +49,32 @@
             <table class="table table-hover align-middle mb-0">
                 <thead class="table-light">
                     <tr>
-                        <th class="ps-4">@Html.DisplayNameFor(model => model.EmployeeNumber)</th>
-                        <th>Full Name</th> <!-- Combined for cleaner UI -->
-                        <th>@Html.DisplayNameFor(model => model.BirthDate)</th>
-                        <th>@Html.DisplayNameFor(model => model.Department)</th>
+                        <th class="ps-4">
+                            <a asp-action="Index" asp-route-sortOrder="@ViewData["NumSortParm"]" class="text-decoration-none text-dark">
+                                ID <i class="bi bi-arrow-down-up small"></i>
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]" class="text-decoration-none text-dark">
+                                Full Name <i class="bi bi-arrow-down-up small"></i>
+                            </a>
+                        </th>
+                        <th>Birth Date</th>
+                        <th>Department</th>
+                        <th>Status</th>
                         <th class="text-end pe-4">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
+                    @if (!Model.Any())
+                    {
+                        <tr>
+                            <td colspan="6" class="text-center py-5 text-muted">
+                                <i class="bi bi-person-exclamation display-4 d-block mb-2"></i>
+                                No employees found.
+                            </td>
+                        </tr>
+                    }
                     @foreach (var item in Model)
                     {
                         <tr>
@@ -32,7 +82,8 @@
                                 #@item.EmployeeNumber
                             </td>
                             <td>
-                                @item.FirstName @item.LastName
+                                <div class="fw-bold">@item.FirstName @item.LastName</div>
+                                <small class="text-muted">@item.MonthlyRate.ToString("C", new System.Globalization.CultureInfo("en-PH")) / mo</small>
                             </td>
                             <td>
                                 @item.BirthDate.ToString("MMM dd, yyyy")
@@ -42,16 +93,21 @@
                                     @(item.Department?.Name ?? "Unassigned")
                                 </span>
                             </td>
+                            <td>
+                                <span class="badge @(item.Status == EmploymentStatus.Regular ? "bg-success" : "bg-warning")">
+                                    @item.Status
+                                </span>
+                            </td>
                             <td class="text-end pe-4">
-                                <div class="btn-group btn-group-sm" role="group">
-                                    <a class="btn btn-outline-warning" asp-action="Edit" asp-route-id="@item.Id" title="Edit">
-                                        Edit
+                                <div class="btn-group btn-group-sm">
+                                    <a class="btn btn-outline-primary" asp-action="Details" asp-route-id="@item.Id" title="View Profile">
+                                        <i class="bi bi-eye"></i>
                                     </a>
-                                    <a class="btn btn-outline-primary" asp-action="Details" asp-route-id="@item.Id" title="Details">
-                                        Details
+                                    <a class="btn btn-outline-warning" asp-action="Edit" asp-route-id="@item.Id" title="Edit">
+                                        <i class="bi bi-pencil"></i>
                                     </a>
                                     <a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@item.Id" title="Delete">
-                                        Delete
+                                        <i class="bi bi-trash"></i>
                                     </a>
                                 </div>
                             </td>
@@ -59,6 +115,22 @@
                     }
                 </tbody>
             </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addEmployeeModal" tabindex="-1" aria-labelledby="addEmployeeLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg rounded-2">
+        <div class="modal-content border-0 shadow-sm">
+            <div class="modalheader bg-primary text-white p-2">
+                <h5 class="modal-title" id="addEmployeeLabel">
+                    <i class="bi bi-person-plus me-2"></i>Register New Employee
+                </h5>
+                <button type="button" class="btn btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <partial name="_CreateEmployeePartial" model="new BayanihanHRIS_Payroll.Models.Employee { FirstName = string.Empty }" />
+            </div>
         </div>
     </div>
 </div>

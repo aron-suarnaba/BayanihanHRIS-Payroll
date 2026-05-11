@@ -50,10 +50,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/VSCode/Source/repos/BayanihanHRIS&Payroll/BayanihanHRIS&Payroll/Views/Employees/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/VSCode/Source/repos/BayanihanHRIS&Payroll/BayanihanHRIS&Payroll/Views/Employees/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -68,6 +64,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/VSCode/Source/repos/BayanihanHRIS&Payroll/BayanihanHRIS&Payroll/Views/Employees/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/VSCode/Source/repos/BayanihanHRIS&Payroll/BayanihanHRIS&Payroll/Views/Employees/_CreateEmployeePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXF9DcmVhdGVFbXBsb3llZVBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/VSCode/Source/repos/BayanihanHRIS&Payroll/BayanihanHRIS&Payroll/Views/Holidays/Create.cshtml]
