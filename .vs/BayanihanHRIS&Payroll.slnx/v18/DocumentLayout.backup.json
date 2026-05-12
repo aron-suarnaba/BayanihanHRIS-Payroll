@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|c:\\vscode\\source\\repos\\bayanihanhris\u0026payroll\\bayanihanhris\u0026payroll\\views\\employees\\_createemployeepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|solutionrelative:bayanihanhris\u0026payroll\\views\\employees\\_createemployeepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|c:\\vscode\\source\\repos\\bayanihanhris\u0026payroll\\bayanihanhris\u0026payroll\\views\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|solutionrelative:bayanihanhris\u0026payroll\\views\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|c:\\vscode\\source\\repos\\bayanihanhris\u0026payroll\\bayanihanhris\u0026payroll\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|solutionrelative:bayanihanhris\u0026payroll\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|c:\\vscode\\source\\repos\\bayanihanhris\u0026payroll\\bayanihanhris\u0026payroll\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|solutionrelative:bayanihanhris\u0026payroll\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|c:\\vscode\\source\\repos\\bayanihanhris\u0026payroll\\bayanihanhris\u0026payroll\\views\\employees\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|solutionrelative:bayanihanhris\u0026payroll\\views\\employees\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|c:\\vscode\\source\\repos\\bayanihanhris\u0026payroll\\bayanihanhris\u0026payroll\\views\\employees\\_detailspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|solutionrelative:bayanihanhris\u0026payroll\\views\\employees\\_detailspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|c:\\vscode\\source\\repos\\bayanihanhris\u0026payroll\\bayanihanhris\u0026payroll\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|solutionrelative:bayanihanhris\u0026payroll\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|c:\\vscode\\source\\repos\\bayanihanhris\u0026payroll\\bayanihanhris\u0026payroll\\views\\employees\\_createemployeepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27A8AAC-ED61-69AA-5E32-B611B307FBAE}|BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll.csproj|solutionrelative:bayanihanhris\u0026payroll\\views\\employees\\_createemployeepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,28 +42,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "_DetailsPartial.cshtml",
+              "DocumentMoniker": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Views\\Employees\\_DetailsPartial.cshtml",
+              "RelativeDocumentMoniker": "BayanihanHRIS\u0026Payroll\\Views\\Employees\\_DetailsPartial.cshtml",
+              "ToolTip": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Views\\Employees\\_DetailsPartial.cshtml",
+              "RelativeToolTip": "BayanihanHRIS\u0026Payroll\\Views\\Employees\\_DetailsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T10:31:17.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "_CreateEmployeePartial.cshtml",
               "DocumentMoniker": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Views\\Employees\\_CreateEmployeePartial.cshtml",
               "RelativeDocumentMoniker": "BayanihanHRIS\u0026Payroll\\Views\\Employees\\_CreateEmployeePartial.cshtml",
               "ToolTip": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Views\\Employees\\_CreateEmployeePartial.cshtml",
               "RelativeToolTip": "BayanihanHRIS\u0026Payroll\\Views\\Employees\\_CreateEmployeePartial.cshtml",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAwD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAowGEAAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-11T08:10:18.022Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Views\\Employees\\Edit.cshtml",
-              "RelativeDocumentMoniker": "BayanihanHRIS\u0026Payroll\\Views\\Employees\\Edit.cshtml",
-              "ToolTip": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Views\\Employees\\Edit.cshtml",
-              "RelativeToolTip": "BayanihanHRIS\u0026Payroll\\Views\\Employees\\Edit.cshtml",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAwwG8AAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-09T05:39:03.731Z"
             },
             {
               "$type": "Document",
@@ -73,32 +74,33 @@
               "RelativeDocumentMoniker": "BayanihanHRIS\u0026Payroll\\Controllers\\EmployeesController.cs",
               "ToolTip": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Controllers\\EmployeesController.cs",
               "RelativeToolTip": "BayanihanHRIS\u0026Payroll\\Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAmwEAAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAcwEAAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-08T05:20:16.925Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "BayanihanHRIS\u0026Payroll\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "BayanihanHRIS\u0026Payroll\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAwwB4AAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-08T05:02:58.11Z"
+              "WhenOpened": "2026-05-08T05:02:58.11Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Views\\Employees\\Index.cshtml",
               "RelativeDocumentMoniker": "BayanihanHRIS\u0026Payroll\\Views\\Employees\\Index.cshtml",
               "ToolTip": "C:\\VSCode\\Source\\repos\\BayanihanHRIS\u0026Payroll\\BayanihanHRIS\u0026Payroll\\Views\\Employees\\Index.cshtml",
               "RelativeToolTip": "BayanihanHRIS\u0026Payroll\\Views\\Employees\\Index.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACYAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAAwHoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-08T03:44:13.929Z",
               "EditorCaption": ""

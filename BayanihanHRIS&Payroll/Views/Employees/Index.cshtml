@@ -100,9 +100,7 @@
                             </td>
                             <td class="text-end pe-4">
                                 <div class="btn-group btn-group-sm">
-                                    <a class="btn btn-outline-primary" asp-action="Details" asp-route-id="@item.Id" title="View Profile">
-                                        <i class="bi bi-eye"></i>
-                                    </a>
+                                    <button type="button" class="btn btn-outline-primary btn-details" data-id="@item.Id" data-url="@Url.Action("Details", "Employee", new { id = item.Id })" title="View Profile"><i class="bi bi-eye"></i></button>
                                     <a class="btn btn-outline-warning" asp-action="Edit" asp-route-id="@item.Id" title="Edit">
                                         <i class="bi bi-pencil"></i>
                                     </a>
@@ -122,11 +120,11 @@
 <div class="modal fade" id="addEmployeeModal" tabindex="-1" aria-labelledby="addEmployeeLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg rounded-2">
         <div class="modal-content border-0 shadow-sm">
-            <div class="modalheader bg-primary text-white p-2">
+            <div class="modal-header bg-primary text-white">
                 <h5 class="modal-title" id="addEmployeeLabel">
                     <i class="bi bi-person-plus me-2"></i>Register New Employee
                 </h5>
-                <button type="button" class="btn btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-4">
                 <partial name="_CreateEmployeePartial" model="new BayanihanHRIS_Payroll.Models.Employee { FirstName = string.Empty }" />
@@ -134,3 +132,40 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="detailsModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content border-0 shadow">
+            <div id="detailsModalContent">
+                <div class="text-center p-5">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(function () {
+            // Use $(document).on so it works even if you refresh the table content via AJAX later
+            $(document).on('click', '.btn-details', function () {
+                var url = $(this).data('url');
+                
+                // Show the modal first so the user sees the spinner
+                $('#detailsModal').modal('show');
+                
+                // Reset the spinner content in case it was already filled
+                $('#detailsModalContent').html('<div class="text-center p-5"><div class="spinner-border text-primary"></div></div>');
+
+                $.get(url, function (data) {
+                    $('#detailsModalContent').html(data);
+                }).fail(function() {
+                    $('#detailsModalContent').html('<div class="alert alert-danger m-3">Error loading details.</div>');
+                });
+            });
+        });
+    </script>
+}

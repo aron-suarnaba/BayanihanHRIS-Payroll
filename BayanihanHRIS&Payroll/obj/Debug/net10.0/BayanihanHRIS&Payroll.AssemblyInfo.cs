@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BayanihanHRIS&Payroll")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+912a8a3404b0345511ea8e3b9a4c6b8a53a99c7c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b51d9fa30c883f45434c90047cf2ba7cb2367654")]
 [assembly: System.Reflection.AssemblyProductAttribute("BayanihanHRIS&Payroll")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BayanihanHRIS&Payroll")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

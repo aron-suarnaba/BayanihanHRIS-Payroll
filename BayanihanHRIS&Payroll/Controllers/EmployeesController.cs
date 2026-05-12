@@ -42,6 +42,11 @@ namespace BayanihanHRIS_Payroll.Controllers
                 return NotFound();
             }
 
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_DetailsPartial", employee);
+            }
+
             return View(employee);
         }
 

@@ -1,0 +1,46 @@
+﻿@model BayanihanHRIS_Payroll.Models.Employee
+
+<div class="modal-header bg-light border-0">
+    <h5 class="modal-title fw-bold text-primary">
+        <i class="bi bi-person-badge me-2"></i> Employee Profile
+    </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body p-4">
+    <div class="row align-items-center mb-4">
+        <div class="col-auto">
+            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem;">
+                @Model.FirstName[0]@Model.LastName[0]
+            </div>
+        </div>
+        <div class="col">
+            <h3 class="mb-0 fw-bold">@Model.FirstName @Model.LastName</h3>
+            <span class="badge bg-success">@Model.Status</span>
+            <span class="text-muted ms-2">#@Model.EmployeeNumber</span>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-6">
+            <p class="mb-1 text-muted small fw-bold text-uppercase">Department</p>
+            <p class="fs-6">@(Model.Department?.Name ?? "Unassigned")</p>
+            
+            <p class="mb-1 text-muted small fw-bold text-uppercase">Date Hired</p>
+            <p class="fs-6">@Model.DateHired.ToString("MMMM dd, yyyy")</p>
+        </div>
+        <div class="col-md-6">
+            <p class="mb-1 text-muted small fw-bold text-uppercase">Monthly Salary</p>
+            <p class="fs-6 fw-bold text-success">@Model.MonthlyRate.ToString("C", new System.Globalization.CultureInfo("en-PH"))</p>
+            
+            <p class="mb-1 text-muted small fw-bold text-uppercase">Government IDs</p>
+            <div class="small">
+                <div><strong>SSS:</strong> @Model.SSSNumber</div>
+                <div><strong>TIN:</strong> @Model.TINNumber</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer border-top-0">
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning px-4">Edit Profile</a>
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>
